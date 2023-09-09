@@ -1,0 +1,29 @@
+body {
+  background-color: #222;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+p {
+  font-size: 18px;
+}
+.card {
+  width: 500px;
+  background: linear-gradient(180deg, #001a31, #008c70);
+}
+.search button {
+  background-color: gray;
+  transition: 0.5s;
+}
+.search button:hover {
+  background-color: #222;
+}
+.details img {
+  width: 40px;
+  height: 40px;
+}
+.error-message {
+  display: none;
+}

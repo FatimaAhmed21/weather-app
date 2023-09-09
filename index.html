@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <<<BOOTSTRAP FILE>>> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <<<FONT-AWESOME FILE>>> -->
+    <link rel="stylesheet" href="css/font-awesome.all.min.css" />
+    <!-- <<<CSS FILE>>> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="card my-5 mx-auto border-0 p-5">
+      <div class="search d-flex justify-content-center">
+        <input
+          type="text"
+          class="w-75 border-0 p-2 rounded-3"
+          placeholder="Enter a City Name..."
+        />
+        <button
+          onclick="checkWeather(cityInp.value)"
+          class="rounded-3 p-2 ms-1 text-white"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <p class="text-danger error-message text-center my-2">
+        invalid city name
+      </p>
+      <div class="weather my-4 text-center text-white">
+        <img class="weather-icon" src="images/clear.png" />
+        <h1 id="temp"></h1>
+        <h2 id="city"></h2>
+        <div class="details text-start d-flex justify-content-between">
+          <div class="d-flex align-items-end gap-2">
+            <img src="images/humidity.png" />
+            <div>
+              <p id="humidity" class="mb-0"></p>
+              <span>Humidity</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-end gap-2">
+            <img src="images/wind.png" width="100" />
+            <div>
+              <p id="wind" class="mb-0"></p>
+              <span>Wind Speed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <<<JS FILE>>> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
